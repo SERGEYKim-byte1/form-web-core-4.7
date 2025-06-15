@@ -1,0 +1,170 @@
+*{
+    box-sizing: border-box;
+    font-family: 'barlow';
+}
+
+.left_container{
+    background-image: url(.//assets/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 15px;
+    padding: 20px;
+    height: 1vh;
+}
+
+.logo img{
+ width: 250px;
+ margin: 50px 0px 0px 50px;
+}
+
+h1, h3{
+    color: #2A4A5C ;
+}
+
+p{
+    color: #7B8A92;
+}
+
+button{
+    color: #fff;
+    border: none;
+}
+
+.buttons_right img{
+    margin-right: 15px;
+    width: 16px;
+}
+
+.buttons_right button{
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 15px;
+  transition: 0.3s;
+}
+
+.buttons_right button:hover{
+  background: #1a4157;
+}
+
+.facebook_right{
+    background-color: #255A9B;
+}
+
+.link_right{
+    background-color: #0076B6;
+}
+
+.buttons_right{
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.or_right__container{
+ display: flex;
+ justify-content: start;
+ align-items: center;
+}
+
+.or_line__left, .or_line__right{
+    width: 170px;
+    border-bottom: solid 1px #AFAFAF;
+}
+
+.or_midle{
+    margin: 20px 5px;
+    padding: 5px;
+}
+
+.right_container__form{
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.right_container__form input{
+    border: none;
+    font-size: 18px;
+}
+
+.right_second__text{
+    margin-bottom: 40px;
+}
+
+.right_container__form input::placeholder{
+    color: black;
+}
+
+.input_email__right,.input_phone__right{
+    padding-left: 10px;
+}
+
+.input_email__right {
+    border-left: solid 2px #0795e2;
+}
+
+.input_text{
+    color: #96A5B1;
+}
+
+.right_container__list{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.right_container__list label{
+    display: flex;
+    align-items: center;
+}
+
+.right_container__list p{
+    color: black;
+    font-size: 18px;
+}
+
+.right_container__list i{
+    color: #AFAFAF;
+}
+
+.submmit{
+    color: #ffffff;
+    background: #0076B6;
+    padding: 15px 35px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 5px;
+    width: 250px;
+    transition: 0.3s;
+}
+
+.submmit:hover{
+    background: #2caff5;
+}
+
+.right_container__list i:before{
+    display: block;
+    position: absolute;
+    content: attr(data-title);
+    width: 270px;
+    box-shadow: #96A5B1;
+    font-size: 12px;
+    padding: 8px;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -100px;
+    box-sizing: border-box;
+    color: #ffffff;
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.right_container__list i:hover:before{
+    visibility: visible;
+    opacity: 1;
+}
